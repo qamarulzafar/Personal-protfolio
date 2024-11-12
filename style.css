@@ -1,0 +1,825 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(240, 240, 240);
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .side-sec ul li a:nth-child(odd):hover {
+  color: rgb(174, 119, 0);
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .side-sec ul {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+header .side-sec span {
+  color: rgb(174, 119, 0);
+}
+header .side-sec span:hover {
+  color: rgb(174, 119, 0);
+}
+
+header .logo h2 {
+  font-size: 3.5vmin;
+  margin-left: 7px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(20, 19, 19);
+  cursor: pointer;
+}
+header .logo h1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+header .logo {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .side-sec ul li:nth-child(odd) {
+  color: rgb(81, 81, 81);
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+header .side-sec ul li{
+  font-size: 1.4vmax;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 530px) {
+  header .logo h1 {
+    display: none;
+  }
+  header .side-sec ul {
+    margin-right: 20px;
+  }
+  header .logo {
+    margin-left: 20px;
+  }
+  header {
+    height: 50px;
+  }
+}
+
+/* main  */
+
+main .part1 img {
+  width: 450px;
+  border: 0.1px solid black;
+  border-radius: 50%;
+  background-color: rgb(222, 221, 221);
+}
+
+main {
+  width: 100%;
+  height: 800px;
+}
+
+main .part2 > h1 {
+  font-size: 5.5rem;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main .part2 h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main .part2 p {
+  width: 410px;
+  color: grey;
+  word-spacing: 0.4px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+main .part2 .circles {
+  display: flex;
+  gap: 5px;
+}
+
+main .part2 .circles .circle-1 {
+  width: 140px;
+  height: 140px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+main .part2 .circles .circle-1:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+main .part2 .circles .circle-2 {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(253, 49, 49);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+main .part2 .circles .circle-2:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+main .part2 .circles .circle-3 {
+  width: 140px;
+  height: 140px;
+  background-color: rgb(82, 227, 215);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  /* animation: grow 4s forwards; */
+  /* position: relative;
+  animation: moveUp 1s ease forwards;  */
+}
+
+/* @keyframes moveUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+} */
+
+main .part2 .circles .circle-3:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+@media only screen and (max-width: 930px) {
+  main .part1 img {
+    width: 400px;
+  }
+  main .part2 .circles .circle-1 {
+    width: 120px;
+    height: 120px;
+    font-size: large;
+  }
+  main .part2 .circles .circle-2 {
+    width: 120px;
+    height: 120px;
+    font-size: large;
+  }
+  main .part2 .circles .circle-3 {
+    width: 120px;
+    height: 120px;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    flex-direction: column;
+    height: 1000px;
+  }
+
+  main .part2 {
+    text-align: center;
+  }
+
+  main .part2 .circles {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main .part1 img {
+    width: 300px;
+  }
+  main .part2 .circles .circle-1 {
+    width: 100px;
+    height: 100px;
+    font-size: large;
+  }
+  main .part2 .circles .circle-2 {
+    width: 100px;
+    height: 100px;
+    font-size: large;
+  }
+  main .part2 .circles .circle-3 {
+    width: 100px;
+    height: 100px;
+    font-size: large;
+  }
+
+  main {
+    height: 800px;
+  }
+
+  main .part2 p {
+    padding: 0px 10px;
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main .part2 .circles {
+    flex-direction: column;
+  }
+  main {
+    height: 1000px;
+  }
+  main .part1 img {
+    width: 250px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0px;
+}
+
+footer h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 13px 0px;
+  /* font-size: 3.5vmin; */
+}
+
+footer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(90, 90, 90);
+  /* font-size: 2.7vmin; */
+}
+
+footer .social-media .social-media-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+footer .social-media .social-media-logo i {
+  font-size: 20px;
+  color: rgb(36, 36, 36);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer .phone {
+    text-align: center;
+  }
+  footer .email {
+    text-align: center;
+  }
+  footer .social-media {
+    text-align: center;
+  }
+  footer .social-media .social-media-logo {
+    justify-content: center;
+  }
+}
+
+/* resume section  */
+
+.resume h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 6.5vmin;
+}
+
+.resume .part-1 {
+  width: 500px;
+  /* height: 600px; */
+}
+
+.resume .part-2 {
+  width: 500px;
+  /* height: 600px; */
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.resume .part-2 .ex-1 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.resume .part-2 .ex-1 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vmin;
+}
+
+.resume .part-2 .ex-2 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.resume .part-2 .ex-2 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vmin;
+}
+
+.resume .part-2 .ex-3 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.resume .part-2 .ex-3 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5vmin;
+}
+
+.resume .part-2 .ex-1 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.resume .part-2 .ex-2 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.resume .part-2 .ex-3 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.line {
+  width: 90%;
+  margin: 0px auto;
+  height: 0.5px;
+  background-color: rgb(205, 205, 205);
+}
+
+/* education sec  */
+
+.Education h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 6.5vmin;
+}
+
+.Education .part-1 {
+  width: 500px;
+}
+
+.Education .part-2 {
+  width: 500px;
+}
+
+.Education {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.Education .part-2 .ex-1 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.Education .part-2 .ex-1 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vmin;
+}
+
+.Education .part-2 .ex-2 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.Education .part-2 .ex-2 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 4vmin;
+}
+
+.Education .part-2 .ex-3 p {
+  max-width: 400px;
+  color: rgb(122, 122, 122);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+.Education .part-2 .ex-3 h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 5vmin;
+}
+
+.Education .part-2 .ex-1 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.Education .part-2 .ex-2 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.Education .part-2 .ex-3 .year > p {
+  color: rgb(30, 25, 25);
+  text-decoration: underline;
+}
+
+.line {
+  width: 90%;
+  margin: 50px auto;
+  height: 0.5px;
+  background-color: rgb(205, 205, 205);
+}
+
+/* skill  */
+
+.skill {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.skill .part-1 h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 6.5vmin;
+}
+
+.skill .part-2 ul li {
+  max-width: 400px;
+  color: rgb(99, 99, 99);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 3vmin;
+}
+
+.skill .part-2 ul {
+  line-height: 25px;
+  padding: 0;
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+.skill .part-1,
+.skill .part-2 {
+  width: 500px;
+}
+
+@media only screen and (max-width: 560px) {
+  .skill .part-2 ul li {
+    letter-spacing: 0;
+    word-spacing: 0;
+  }
+  .skill .part-2 ul {
+    line-height: 12px;
+  }
+}
+
+/* project section  */
+
+.projects .project-1,
+.projects .project-2,
+.projects .project-3,
+.projects .project-4 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 10px;
+}
+
+.projects .project-1 .project-info p,
+.projects .project-2 .project-info p,
+.projects .project-3 .project-info p,
+.projects .project-4 .project-info p {
+  max-width: 400px;
+  font-size: 1.4vw;
+  color: rgb(126, 126, 126);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* line-height: 24px; */
+  word-spacing: 2px;
+}
+
+.projects .project-1 .project-info h1,
+.projects .project-2 .project-info h1,
+.projects .project-3 .project-info h1,
+.projects .project-4 .project-info h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 0;
+  font-size: 4vmin;
+}
+
+.project-1 .project-pic img,
+.project-2 .project-pic img,
+.project-3 .project-pic img,
+.project-4 .project-pic img {
+  /* max-width: 100%; */
+  height: auto;
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-1 .project-pic img,
+  .project-2 .project-pic img,
+  .project-3 .project-pic img,
+  .project-4 .project-pic img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projects .project-1,
+  .projects .project-2,
+  .projects .project-3,
+  .projects .project-4 {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 0;
+    justify-content: baseline;
+    margin: 0 20px;
+  }
+
+  .project-1 .project-pic img,
+  .project-2 .project-pic img,
+  .project-3 .project-pic img,
+  .project-4 .project-pic img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .projects .project-1 .project-info p,
+  .projects .project-2 .project-info p,
+  .projects .project-3 .project-info p,
+  .projects .project-4 .project-info p {
+    max-width: 280px;
+    font-size: 1.8vw;
+  }
+}
+
+.projects > h1 {
+  font-size: 3.5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+  text-decoration: underline;
+}
+.resume-h > h1 {
+  font-size: 3.5vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 50px 0px;
+  text-decoration: underline;
+}
+
+.contact .contactinfo h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-size: 8vmin;
+}
+.contact .contactinfo p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #646464;
+}
+
+.contact .contactinfo .phone h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.contact .contactinfo .phone p {
+  margin: 0;
+}
+
+.contact .contactinfo .mail h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  margin-top: 20px;
+}
+.contact .contactinfo .mail p {
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 100px 0px;
+}
+
+.container {
+  min-width: 500px;
+  max-width: 500px;
+  /* margin: 50px auto; */
+  /* padding: 20px; */
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid black; */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #646464;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  /* border-radius: 5px; */
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid black;
+  /* border-radius: 5px; */
+  box-sizing: border-box;
+  background-color: transparent;
+}
+.form-group input[type="submit"] {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: orange;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  font-size: 26px;
+}
+.form-group input[type="submit"]:hover {
+  background-color: rgb(240, 240, 240);
+  color: #000;
+}
+
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container form {
+    flex-direction: column;
+    width: auto;
+  }
+  .container {
+    min-width: auto;
+  }
+  .form-group input[type="submit"] {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 200px;
+    height: 40px;
+    /* border-radius: 50%; */
+    font-size: 20px;
+  }
+
+  .form-group textarea {
+    width: 200px;
+  }
+}
+
+
+
+
+/* General animation classes */
+.main-animate,
+.circle-animate,
+.edu-animate,
+.skill-animate,
+.pp-animate,
+.pp2-animate,
+.pp3-animate,
+.pp4-animate,
+.pi1-animate,
+.pi2-animate,
+.pi3-animate,
+.pi4-animate {
+  opacity: 0;
+}
+
+.main-animate .animate__animated,
+.circle-animate .animate__animated,
+.edu-animate .animate__animated,
+.skill-animate .animate__animated,
+.pp-animate .animate__animated,
+.pp2-animate .animate__animated,
+.pp3-animate .animate__animated,
+.pp4-animate .animate__animated,
+.pi1-animate .animate__animated,
+.pi2-animate .animate__animated,
+.pi3-animate .animate__animated,
+.pi4-animate .animate__animated {
+  opacity: 1;
+}
+
